@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Retail App</title>
+       
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
+     <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #0A1D39;  
+}
+ .compact{
+  margin: 60px; 
+  max-width: 500px;
+  padding: 100px;
+  background-color: white;
+
+ }
+
+</style>      
+
+</head>
+<body> 
+
+<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                       
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav">
+            <li class="#"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+            <li class="active"><a href="#">Regiser</a></li>
+          </ul>
+          
+</nav>
+
+  <center>
+   
+    <h1 style="font-size:8vw"><font color="white">Inventory Management</font></h1>
+                 <div class="compact">
+                <form action="insert.php" method="POST">
+                Name:         <input type="text" name="Name" required placeholder="Enter your name"><br>
+
+
+                Telephone:    <input type="tel" name="telephone" required placeholder="Pattern: 234-567-8910" pattern="(([0-9]{3})(-[0-9]{3})(-[0-9]{4}))"><br>
+
+
+                Email_address:<input type="email" name="mail" placeholder="Enter your email address" required multiple><br>
+
+                User_name:    <input type="text" name="userName" required placeholder="Enter your user name"><br>
+
+
+                Password :    <input type="password" name="password" pattern="[a-zA-Z0-9_]{8,15}" placeholder="Enter the password" 
+                             minlength=8 maxlength="15" autocomplete="off" required><br>
+                         
+                <button type="submit" class="btn btn-primary mb-2" value="Login">Register</button>
+
+
+               <button type="reset" class="btn btn-primary mb-2" name="reset" value="Clear">Clear</button><br>
+           </form>
+             </div>
+  </center>
+
+ </body>
+</html>
